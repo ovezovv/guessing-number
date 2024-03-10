@@ -18,7 +18,7 @@ const mongoUri = process.env.MONGODB_URL || 'mongodb://localhost:27017/fashionso
 
 const s_options = {
   customCss: ".swagger-ui .topbar { display: none }",
-  customSiteTitle: "Nico Social API",
+  customSiteTitle: "Guessing Game API",
   customfavIcon: "/assets/favicon.png",
   docExpansion: "none",
   explorer: true,
