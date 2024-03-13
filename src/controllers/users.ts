@@ -12,7 +12,7 @@ export const register = async (req: Request, res: Response) => {
 
     const existingUser = await getUserByUsername(username);
 
-    if (existingUser) return res.status(400).send("Make sure you have filled in correctly!");
+    if (existingUser) return res.status(200).json(existingUser).end();
 
     const user = await createUser({ username });
 
