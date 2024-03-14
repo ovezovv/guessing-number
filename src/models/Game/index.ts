@@ -2,7 +2,7 @@ import mongoose, { Schema, Document } from 'mongoose';
 
 interface IGame extends Document {
   players: {
-    userId: Schema.Types.ObjectId;
+    username: string;
     point: number;
     multiplier: number;
   }[];
@@ -14,11 +14,10 @@ interface IGame extends Document {
 
 const GameSchema: Schema = new Schema({
   players: [{
-    userId: { type: Schema.Types.ObjectId, ref: "User" },
+    username: { type: String, required: true },
     point: { type: Number, required: true },
     multiplier: { type: Number, required: true },
   }],
-  chatId: { type: Schema.Types.ObjectId, ref: "Chat" },
   winNumber: { type: Number },
   updatedAt: { type: Date, default: Date.now},
   createdAt: { type: Date, default: Date.now },

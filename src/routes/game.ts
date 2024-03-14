@@ -1,8 +1,9 @@
 import express from 'express';
-import { register,  getUserInfo } from '../controllers/users';
+import { create, update } from '../controllers/game';
 
 const gameRouter = express.Router();
 
-gameRouter.post('/create', register);
+gameRouter.post('/create', create);
+gameRouter.put('/update', update);
 
 export default gameRouter;
