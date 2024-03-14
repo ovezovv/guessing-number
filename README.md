@@ -1,6 +1,4 @@
-# Fashion Social Backend
-
-Backend System for E-commerce Platform which provides APIs and Database Connection for Mobile Application and CMS.
+# Guessing Number Backend
 
 ## Installation Steps
 - Clone the repo on your local machine, make sure you are cloning project from `main` branch.
@@ -14,7 +12,7 @@ npm run install
 ```.env
 HOST="localhost"
 PORT=8000
-MONGODB_URL="mongodb://localhost:27017/fashionsocial"
+MONGODB_URL="mongodb://localhost:27017/guessing-number"
 ```
 - Run the comman below for generating Swagger Documentation:
 ```
